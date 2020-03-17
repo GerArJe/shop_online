@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-/* ------------- variablez */
+/* ------------- variables */
 :root{
     --green-color:#7ACC2D;
     --white-color:white;
@@ -11,39 +11,50 @@
     /* Box shadow */
     --box:0 0 2px 1px #e6e5e9;
 }
-/* ------------- variablez */
+/* ------------- variables */
 html, body{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-size: var(--normal);
     font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-size: var(--normal);
 }
 
 nav{
     display: flex;
     background-color: var(--green-color);
     padding: var(--space);
-    color: var(--white-color);
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    min-height: 60px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: var(--normal);
+}
+
+nav a:hover{
+    color: var(--white-color);
 }
 
 nav ul{
     display: flex;
+    padding-right: 20px;
 }
 
-nav li{
+nav ul li{
     padding-left: 20px;
     list-style: none;
 }
 
-nav li a{
-    color: var(--black-color);
-    text-decoration: none;
-}
-
-nav li a:hover{
-    color: var(--white-color);
+hr{
+    opacity: .2;
 }
 
 /* ------------------------------ Main section*/
@@ -53,27 +64,30 @@ nav li a:hover{
     text-align: center;
 }
 
+/* ------------------------------ Products*/
 .products{
     background-image: url("../images/curve.png");
-    height: 50px;
+    height: 95px;
     background-size: cover;
     background-position: center top;
-    padding: 20%;
+    background-repeat: no-repeat;
+    padding: 15%;
     display: flex;
 }
 
 .product{
-    padding: var(--space);
-    margin-top: -240px;
+    padding: 20px;
+    margin-top: -226px;
 }
 
-.product .content{
+.content{
     background-color: var(--white-color);
-    padding: var(--space);
+    padding: 20px;
     box-shadow: var(--box);
+    border-radius: 3px;
 }
 
-.image_content{
+.image-product{
     text-align: center;
 }
 
@@ -83,7 +97,7 @@ nav li a:hover{
     padding: var(--space);
     font-size: var(--normal);
     color: var(--white-color);
-    border: none;
+    border: 0px;
     cursor: pointer;
     border-radius: 2px;
 }
@@ -91,3 +105,62 @@ nav li a:hover{
 .main_button:hover{
     background-color: #5e9e22;
 }
+
+/* Beneficios */
+.beneficios{
+    padding: 10%;
+    display: flex;
+  }
+  
+.beneficio{
+    text-align: center;
+    padding: 20px;
+}
+  
+.beneficio img{
+    max-height: 100px
+}
+  
+.text_beneficio{
+    text-align: justify;
+}
+
+/* Mentions */
+.mentions{
+    display: flex;
+    padding: 5%;
+}
+
+.mention img{
+    width: 100%;
+}
+
+h2.mention_title{
+    text-align: center;
+}
+
+.mention{
+    padding: var(--space);
+}
+
+.content_mention{
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.mention .text{
+    padding: var(--space);
+}
+
+/* ------------------------------ Footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding: var(--space);
+    color: var(--white-color);
+}
+
+
+
+
