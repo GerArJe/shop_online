@@ -57,13 +57,27 @@
 
 .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
     padding: 10px;
+    align-self: center;
 }
 
-@media(max-widgth: 900px){
+@media(max-width: 900px){
     .row{
         display: inherit;
+    }
+
+    .row_reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 10px;
     }
     .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
         width: 100%;
     }
 }
+
+.image_product{
+    max-height: 230px;
+    max-width: 230px;
+}
+
+
