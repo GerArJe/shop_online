@@ -186,3 +186,7 @@ footer{
     padding: var(--space);
     color: var(--white-color);
 }
+
+.option_contact a{
+    color: var(--green-color);
+}
